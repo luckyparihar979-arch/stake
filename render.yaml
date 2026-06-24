@@ -1,0 +1,11 @@
+services:
+  - type: static
+    name: stake
+    env: static
+    branch: master
+    staticPublishPath: .
+    buildCommand: ""
+    redirects:
+      - source: /*
+        destination: /index.html
+        type: rewrite
